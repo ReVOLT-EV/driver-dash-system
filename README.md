@@ -1,7 +1,6 @@
 # ReVOLT EV Vehicle Dashboard
+A gui for the driver's dashboard of an EV motorcycle. It includes a startscreen, then a main dashboard screen that displays performance metrics such as speed (km/h), rpm, current draw (A) and engine temperature. 
 
-first run \
-`pip install -r requirements.txt`\
-then \
-`python3 demo1.py` or `python3 demo2.py`\
-(demo1 will display the dashboard as its own application, demo2 displays it as a PyQT widget)
+run: \
+dashboard2.0.py
+
