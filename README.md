@@ -4,4 +4,4 @@ A gui for the driver's dashboard of an EV motorcycle. It includes a startscreen,
 first run \
 `pip install -r requirements.txt`\
 then \
-dashboard2.0.py
+`python3 dashboard2.0.py`
