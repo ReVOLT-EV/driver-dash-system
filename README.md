@@ -3,3 +3,4 @@ A gui for the driver's dashboard of an EV motorcycle. It includes a startscreen,
 
 run: \
 dashboard2.0.py
+
