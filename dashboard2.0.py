@@ -1,26 +1,5 @@
 import tkinter as tk
-import time
-
-# === Placeholder sensor-reading functions ===
-def get_speed():
-    """Retrieve speed from your sensor or GPS module."""
-    # TODO: replace with real sensor reading
-    return 123
-
-def get_rpm():
-    """Retrieve RPM from your ECU, coil tap, or CAN bus."""
-    # TODO: replace with real sensor reading
-    return 4567
-
-def get_current():
-    """Retrieve current usage from your Hall effect sensor + ADC."""
-    # TODO: replace with real sensor reading
-    return 4.8
-
-def get_eng_temp(): 
-     """Retrieve engine temperature from sensor"""
-     # TODO: replace with real sensor reading
-     return 50.6
+from DataGenerator import get_speed, get_rpm, get_current, get_eng_temp
 
 # ------------------------------------------------------------------------------
 # 1) Start Screen
@@ -131,7 +110,7 @@ class DashboardApp(tk.Frame):
 
     def update_values(self):
         """Update the label texts with live sensor data."""
-        speed_val = get_speed()
+        speed_val = get_speed() #call simulator.update() only in get_speed()
         rpm_val = get_rpm()
         current_val = get_current()
         eng_temp_val = get_eng_temp()
