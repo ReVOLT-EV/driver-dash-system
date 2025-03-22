@@ -65,6 +65,14 @@ class DashboardApp(tk.Frame):
         self.large_font = ("Arial", 50, "bold")  # Adjust as needed
         self.medium_font = ("Arial", 30, "bold")
 
+        # create a container to store all the labels 
+        '''
+        container = tk.Frame(root)
+        container.grid(row=0, column=0)
+        root.grid_rowconfigure(0, weight=1)
+        root.grid_columnconfigure(0, weight=1)
+        '''
+
         # Create labels for Speed, RPM, and Current
         self.speed_label = tk.Label(
             root,
@@ -73,7 +81,7 @@ class DashboardApp(tk.Frame):
             fg="white",
             bg="black"
         )
-        self.speed_label.pack(pady=20)
+        self.speed_label.grid(row=0,column=0, padx=50, pady=(120,50))
 
         self.rpm_label = tk.Label(
             root,
@@ -82,7 +90,7 @@ class DashboardApp(tk.Frame):
             fg="white",
             bg="black"
         )
-        self.rpm_label.pack(pady=20)
+        self.rpm_label.grid(row=1,column=0, padx=50, pady=80)
 
         self.current_label = tk.Label(
             root,
@@ -91,7 +99,7 @@ class DashboardApp(tk.Frame):
             fg="white",
             bg="black"
         )
-        self.current_label.pack(pady=20)
+        self.current_label.grid(row=0,column=1, padx=50, pady=(120,50))
 
         self.eng_temp_label = tk.Label(
             root,
@@ -100,7 +108,7 @@ class DashboardApp(tk.Frame):
             fg="white",
             bg="black"
         )
-        self.eng_temp_label.pack(pady=20)
+        self.eng_temp_label.grid(row=1,column=1, padx=50, pady=80)
 
         """
         Update the label texts with live sensor data.
