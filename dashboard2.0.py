@@ -65,17 +65,9 @@ class DashboardApp(tk.Frame):
         self.large_font = ("Arial", 50, "bold")  # Adjust as needed
         self.medium_font = ("Arial", 30, "bold")
 
-        # create a container to store all the labels 
-        '''
-        container = tk.Frame(root)
-        container.grid(row=0, column=0)
-        root.grid_rowconfigure(0, weight=1)
-        root.grid_columnconfigure(0, weight=1)
-        '''
-
         # Create labels for Speed, RPM, and Current
         self.speed_label = tk.Label(
-            root,
+            self,
             text="SPD: --- km/h",
             font=self.medium_font,
             fg="white",
@@ -84,7 +76,7 @@ class DashboardApp(tk.Frame):
         self.speed_label.grid(row=0,column=0, padx=50, pady=(120,50))
 
         self.rpm_label = tk.Label(
-            root,
+            self,
             text="RPM: -----",
             font=self.medium_font,
             fg="white",
@@ -93,7 +85,7 @@ class DashboardApp(tk.Frame):
         self.rpm_label.grid(row=1,column=0, padx=50, pady=80)
 
         self.current_label = tk.Label(
-            root,
+            self,
             text="CURR: --.- A",
             font=self.medium_font,
             fg="white",
@@ -102,7 +94,7 @@ class DashboardApp(tk.Frame):
         self.current_label.grid(row=0,column=1, padx=50, pady=(120,50))
 
         self.eng_temp_label = tk.Label(
-            root,
+            self,
             text="ENGINE TEMP: --.- °c",
             font=self.medium_font,
             fg="white",
