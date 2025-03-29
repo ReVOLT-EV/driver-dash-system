@@ -2,5 +2,5 @@
 A gui for the driver's dashboard of an EV motorcycle. It includes a startscreen, then a main dashboard screen that displays performance metrics such as speed (km/h), rpm, current draw (A) and engine temperature. 
 
 run: \
-dashboard2.0.py
+`cd app` then `python3 dashboard.py`
 
