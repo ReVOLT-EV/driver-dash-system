@@ -1,5 +1,5 @@
 import tkinter as tk
-from DataGenerator import get_speed, get_rpm, get_current, get_eng_temp
+from dataGenerator import get_speed, get_rpm, get_current, get_eng_temp
 
 # ------------------------------------------------------------------------------
 # 1) Start Screen
@@ -36,7 +36,7 @@ class StartFrame(tk.Frame):
         start_button.pack(pady=0)
 
         # displays ReVOLT's logo using built in PhotoImage class
-        image = tk.PhotoImage(file="logo.png")
+        image = tk.PhotoImage(file="../media/logo.png")
         my_label = tk.Label(self, image=image)
         my_label.image = image  # keep a reference
         my_label.pack(pady=50)
